@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the room offerings at God Given Guest Lodge, including deluxe rooms, presidential suites, and royal accommodations.">
+  <title>Rooms | God Given Guest Lodge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html#home">God Given Guest Lodge</a>
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+    <nav id="nav" class="site-nav">
+      <a href="index.html#home">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="background-image: url('God Given Lodge photos/image 2.jpeg');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="eyebrow">Our Accommodation</span>
+      <h1>Rooms & Suites</h1>
+      <p>Discover refined rooms designed for comfort, privacy, and an unforgettable stay in Harare.</p>
+      <div class="hero-actions">
+        <a href="index.html#contact" class="btn btn-primary">Reserve Now</a>
+        <a href="index.html#home" class="btn btn-secondary">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span>Room Collection</span>
+        <h2>Our Distinguished Rooms</h2>
+        <p>Choose from elegant deluxe rooms, grand presidential suites, and the exclusive royal suite.</p>
+      </div>
+      <div class="rooms-grid">
+        <article class="room-card">
+          <img src="God Given Lodge photos/image 2.jpeg" alt="Deluxe Room">
+          <div class="room-card-body">
+            <h3>Deluxe Room</h3>
+            <p>Elegantly furnished with premium amenities, perfect for the executive traveler seeking refined comfort.</p>
+            <button class="btn btn-secondary room-toggle" data-room="deluxe">View Details</button>
+            <div class="room-details" id="deluxe-details">
+              <p><strong>Price:</strong> $150 per night</p>
+              <p><strong>Amenities:</strong> King-size bed, en-suite bathroom, WiFi, mini-bar, room service.</p>
+              <p><strong>Size:</strong> 35 sqm</p>
+              <div class="room-gallery">
+                <img src="God Given Lodge photos/image 10.jpeg" alt="Deluxe Room Bedroom">
+                <img src="God Given Lodge photos/image 11.jpeg" alt="Deluxe Room Bathroom">
+              </div>
+              <a href="index.html#contact" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card">
+          <img src="God Given Lodge photos/image 3.jpeg" alt="Presidential Suite">
+          <div class="room-card-body">
+            <h3>Presidential Suite</h3>
+            <p>Opulent surroundings and bespoke service for guests demanding the utmost in luxury and privacy.</p>
+            <button class="btn btn-secondary room-toggle" data-room="presidential">View Details</button>
+            <div class="room-details" id="presidential-details">
+              <p><strong>Price:</strong> $300 per night</p>
+              <p><strong>Amenities:</strong> Master bedroom, living area, private balcony, jacuzzi, 24/7 concierge.</p>
+              <p><strong>Size:</strong> 80 sqm</p>
+              <div class="room-gallery">
+                <img src="God Given Lodge photos/image 12.jpeg" alt="Presidential Suite Living Area">
+                <img src="God Given Lodge photos/image 13.jpeg" alt="Presidential Suite Balcony">
+              </div>
+              <a href="index.html#contact" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card">
+          <img src="God Given Lodge photos/image 4.jpeg" alt="Royal Suite">
+          <div class="room-card-body">
+            <h3>Royal Suite</h3>
+            <p>Our crown jewel featuring exclusive amenities, panoramic views, and white-glove service.</p>
+            <button class="btn btn-secondary room-toggle" data-room="royal">View Details</button>
+            <div class="room-details" id="royal-details">
+              <p><strong>Price:</strong> $500 per night</p>
+              <p><strong>Amenities:</strong> Two bedrooms, dining room, private terrace, butler service, premium entertainment.</p>
+              <p><strong>Size:</strong> 120 sqm</p>
+              <div class="room-gallery">
+                <img src="God Given Lodge photos/image 14.jpeg" alt="Royal Suite Dining Room">
+                <img src="God Given Lodge photos/image 15.jpeg" alt="Royal Suite Terrace">
+              </div>
+              <a href="index.html#contact" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container" style="padding: 40px 0; text-align: center; color: var(--text-muted);">
+    <p>Want help choosing the perfect room? Reach out and we will assist you.</p>
+    <p>© <span id="year"></span> God Given Guest Lodge</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <img src="" alt="Room preview">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

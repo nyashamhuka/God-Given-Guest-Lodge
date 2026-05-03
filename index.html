@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="God Given Guest Lodge provides stylish rooms, warm hospitality, and premium amenities in Harare, Zimbabwe.">
+  <title>God Given Guest Lodge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home">God Given Guest Lodge</a>
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+    <nav id="nav" class="site-nav">
+      <a href="#home">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="eyebrow">Premium Luxury Accommodation</span>
+      <h1>Experience Unparalleled Elegance</h1>
+      <p>Discover the finest accommodation in Harare, where timeless luxury meets modern comfort</p>
+      <div class="hero-actions">
+        <a href="rooms.html" class="btn btn-primary">Explore Accommodations</a>
+        <a href="#contact" class="btn btn-secondary">Reserve Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="rooms" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span>Luxury Suites</span>
+        <h2>Our Distinguished Rooms</h2>
+        <p>Exquisitely appointed suites designed for the discerning traveler.</p>
+      </div>
+      <div class="rooms-grid">
+        <article class="room-card">
+          <img src="God Given Lodge photos/image 2.jpeg" alt="Standard Room\">
+          <div class="room-card-body">
+            <h3>Deluxe Room</h3>
+            <p>Elegantly furnished with premium amenities, perfect for the executive traveler seeking refined comfort.</p>
+          </div>
+        </article>
+
+        <article class="room-card">
+          <img src="God Given Lodge photos/image 3.jpeg" alt="Presidential Suite\">
+          <div class="room-card-body">
+            <h3>Presidential Suite</h3>
+            <p>Opulent surroundings and bespoke service for guests demanding the utmost in luxury and privacy.</p>
+          </div>
+        </article>
+
+        <article class="room-card">
+          <img src="God Given Lodge photos/image 4.jpeg" alt="Executive Room\">
+          <div class="room-card-body">
+            <h3>Royal Suite</h3>
+            <p>Our crown jewel featuring exclusive amenities, panoramic views, and white-glove service.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section highlight-section">
+    <div class="container highlight-grid">
+      <div class="highlight-card">
+        <h3>250+</h3>
+        <p>Premium Nights Served</p>
+      </div>
+      <div class="highlight-card">
+        <h3>4.9★</h3>
+        <p>Guest Satisfaction Rate</p>
+      </div>
+      <div class="highlight-card">
+        <h3>24/7</h3>
+        <p>Concierge Service</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span>Gallery</span>
+        <h2>Luxury Spaces</h2>
+        <p>Step into a world of refined elegance and sophisticated design.</p>
+      </div>
+      <div class="gallery-scroll">
+        <img src="God Given Lodge photos/image 5.jpeg" alt="Exterior view">
+        <img src="God Given Lodge photos/image 6.jpeg" alt="Lounge area">
+        <img src="God Given Lodge photos/image 7.jpeg" alt="Hallway">
+        <img src="God Given Lodge photos/image 8.jpeg" alt="Reception">
+        <img src="God Given Lodge photos/image 9.jpeg" alt="Staircase">
+        <img src="God Given Lodge photos/image 10.jpeg" alt="Bedroom">
+        <img src="God Given Lodge photos/image 11.jpeg" alt="Bathroom">
+        <img src="God Given Lodge photos/image 12.jpeg" alt="Living area">
+        <img src="God Given Lodge photos/image 13.jpeg" alt="Dining">
+        <img src="God Given Lodge photos/image 14.jpeg" alt="Garden">
+        <img src="God Given Lodge photos/image 15.jpeg" alt="Outdoor space">
+        <img src="God Given Lodge photos/image 16.jpeg" alt="Entrance">
+        <img src="God Given Lodge photos/image 17.jpeg" alt="Courtyard">
+        <img src="God Given Lodge photos/image 18.jpeg" alt="Interior">
+        <img src="God Given Lodge photos/image 19.jpeg" alt="Suite view">
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span>Testimonials</span>
+        <h2>Guest Accolades</h2>
+        <p>Hear from our esteemed guests about their exceptional experiences.</p>
+      </div>
+
+      <div class="review-form-container">
+        <h3>Share Your Experience</h3>
+        <form id="reviewForm" class="review-form">
+          <div class="form-group">
+            <label for="reviewName">Your Name</label>
+            <input type="text" id="reviewName" name="name" required placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="reviewEmail">Email Address</label>
+            <input type="email" id="reviewEmail" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="reviewRating">Rating</label>
+            <div class="rating-input">
+              <input type="radio" id="star5" name="rating" value="5" required>
+              <label for="star5" class="star-label">★</label>
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4" class="star-label">★</label>
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3" class="star-label">★</label>
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2" class="star-label">★</label>
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1" class="star-label">★</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="reviewText">Your Review</label>
+            <textarea id="reviewText" name="review" required placeholder="Share your experience at God Given Guest Lodge..." rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+      </div>
+
+      <div class="reviews-grid" id="reviewsGrid">
+        <article class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="review-text">"Exceptional hospitality and beautiful rooms. The staff went above and beyond to make our stay comfortable. Highly recommend!"</p>
+          <div class="review-author">
+            <strong>Sarah Johnson</strong>
+            <span>Business Traveler</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="review-text">"A perfect retreat with modern amenities and warm service. The location is ideal and the rooms are spotless. Worth every penny!"</p>
+          <div class="review-author">
+            <strong>Michael Okonkwo</strong>
+            <span>Tourist</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="review-text">"Stayed twice and both times were fantastic. Great value for money, friendly staff, and excellent facilities. Will definitely be back!"</p>
+          <div class="review-author">
+            <strong>Emma White</strong>
+            <span>Return Guest</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="review-text">"Everything was perfect from check-in to check-out. The rooms are beautifully decorated and the WiFi is fast. Highly satisfied!"</p>
+          <div class="review-author">
+            <strong>David Mutua</strong>
+            <span>Corporate Guest</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="review-text">"Beautiful lodge with a personal touch. The team remembers details and makes you feel like family. Absolutely recommended!"</p>
+          <div class="review-author">
+            <strong>Lisa Banda</strong>
+            <span>Leisure Guest</span>
+          </div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="review-text">"Wonderful experience. Rooms are clean, comfortable, and well-equipped. The staff is professional and courteous. Great place to stay!"</p>
+          <div class="review-author">
+            <strong>James Kiptoo</strong>
+            <span>Frequent Visitor</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container contact-grid">
+      <div>
+        <span>Reservations</span>
+        <h2>Reserve Your Escape</h2>
+        <p>Contact our dedicated concierge team to book your exceptional stay or inquire about our exclusive packages.</p>
+        <ul class="contact-list">
+          <li>📍 Harare, Zimbabwe</li>
+          <li>📞 +263 000 000 000</li>
+          <li>✉ reservations@godgivenlodge.com</li>
+        </ul>
+      </div>
+      <div class="contact-action">
+        <button id="whatsappBtn" class="btn btn-primary">Book via WhatsApp</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+      <p>© <span id="year"></span> God Given Guest Lodge</p>
+
+<div class="lightbox" id="lightbox">
+  <img src="" alt="Gallery preview">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
