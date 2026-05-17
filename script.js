@@ -75,6 +75,18 @@ if (lightbox && lightboxImg) {
   });
 }
 
+// open hero image in lightbox when play button clicked
+const heroPlay = document.querySelector('.hero-play');
+if (heroPlay && lightbox && lightboxImg) {
+  heroPlay.addEventListener('click', () => {
+    const heroImg = document.querySelector('.hero-card img');
+    if (heroImg) {
+      lightboxImg.src = heroImg.src;
+      lightbox.classList.add('show');
+    }
+  });
+}
+
 if (lightbox) {
   lightbox.addEventListener('click', () => {
     lightbox.classList.remove('show');
